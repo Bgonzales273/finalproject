@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	font-family: "Shadows Into Light", cursive;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #A6B0FF;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+}

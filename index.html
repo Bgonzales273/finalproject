@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+	
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+	
+	
+    
+    <title> Final Project</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+       
+        
+        
+    </style>
+</head>
+<body>
+
+   
+    <header>
+        <h1>The Cat Corner</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#catgallery">Cat Gallery</a></li>
+				<li><a href="#lifestyle">Lifestyle</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  
+	
+    <main>
+		
+		<div class="banner">
+        Welcome to The Cat Corner – A Purrfect Place for Cat Enthusiasts! Have fun exploring my website!
+    </div>
+		
+		
+        <div class="content">
+            <h2>Raven</h2>
+            <p>This is Raven who is a diva with a catattuide </p>
+			<img src="images/ravenimg.jpg" alt="Diva Cat">
+        </div>
+        <div class="content">
+            <h2>Mars</h2>
+            <p>This is Mars a Tuxdeo cat and a purfect gentlemen.</p>
+			<img src="images/marsimg.jpg" alt="Gentleman Cat">
+        </div>
+        <div class="content">
+            <h2>Juniper</h2>
+            <p>This is Juniper the sweetest cat who loves cuddles.</p>
+			<img src="images/juniper.jpg" alt="Lazy Cat" width="300" height="400">
+        </div>
+		
+		<div class="content">
+        <div class="flexbox">
+          <div id="left-sidebar">
+                
+                <h3>Poll</h3>
+                <p>Which cat above is your favorite?</p>
+                <form>
+                  <input type="radio" name="breed" value="Raven"> Raven<br>
+                  <input type="radio" name="breed" value="Mars"> Mars<br>
+                  <input type="radio" name="breed" value="Juniper"> Juniper<br>
+                  <input type="radio" name="breed" value="All"> All <br>
+                    <input type="submit" value="Vote">
+                </form>
+			<h3>Fun Facts</h3>
+              <p>Did you know cats sleep for 70% of their lives</p>
+            </div>
+			</div>	
+		</div> 
+		<section id="featured">
+                <img src="images/happycatgif.gif" alt="Happy Cat"
+					 style="width:180px;height:350px;">
+		</section> 
+		<div class="flexbox">
+            <div id="right-sidebar">
+                <h3>Latest News</h3>
+                <p>Check out the latest updates in the cat world!</p>
+            </div>
+		</div>
+	     
+    </main>
+	
+	<button onclick="getLocation()">Click button to allow your location </button>
+
+<p id="location"></p>
+
+<script>
+
+const x = document.getElementById("location");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(success, error);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function success(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function error() {
+  alert("Sorry, no position available.");
+}
+</script>
+	
+
+
+    <footer>
+        <p>&copy; Bethany Gonzales 2025 </p>
+    </footer>
+
+</body>
+</html>
+
+
