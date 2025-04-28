@@ -1,15 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
-body{
-	font-family: "Shadows Into Light", cursive;
-    margin: 0;
-    padding: 0;
-	display: flex;
-    flex-direction: column;
-}
-        
-        header, footer {
+
+
+
+header, footer {
             background-color: #A6B0FF;
             color: white;
             text-align: center;
@@ -38,39 +33,41 @@ header {
             color: white;
         }
 
-img {
-  border-radius: 60%;
-}
 
+
+body{
+	font-family: "Shadows Into Light", cursive;
+    margin: 0;
+    padding: 0;
+	display: flex;
+    flex-direction: column;
+	
+}
 .row {  
   display: flex;
   flex-wrap: wrap;
 }
 
+
 .side {
   flex: 30%;
-  background-color:hsla(313,74%,86%,1.00);
+  background-color: hsla(137,100%,95%,1.00);
   padding: 20px;
 }
 
 
 .main {
   flex: 70%;
-  background-color: hsla(25,100%,90%,0.84);
+  background-color: hsla(313,74%,86%,1.00);
   padding: 20px;
 }
 
-h2{
-	text-align:center;
-	color:#a6b0ff;
-}
-h4{
-	text-align:center;
-}
 
-@media screen and (max-width: 700px) {
-  .row, .navbar {   
-    flex-direction: column;
-  }
-	
+
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
 }

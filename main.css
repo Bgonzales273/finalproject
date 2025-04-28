@@ -105,13 +105,13 @@ div#left-sidebar, div#right-sidebar {
         align-items: center;
 	}
 	
-        footer {
-			display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #A6B0FF; 
+	footer {
+	
+            background-color: #A6B0FF;
+            color: white;
             text-align: center;
-            margin-top: auto;
+            padding: 1rem 0;
+            
         }
 	
 }

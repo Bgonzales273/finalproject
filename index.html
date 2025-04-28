@@ -12,7 +12,7 @@
 	
 	
     
-    <title> Final Project</title>
+    <title> The Cat Corner</title>
     <style>
         
         * {
@@ -28,7 +28,6 @@
     </style>
 </head>
 <body>
-
    
     <header>
         <h1>The Cat Corner</h1>
@@ -36,8 +35,9 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#catgallery">Cat Gallery</a></li>
-				<li><a href="#lifestyle">Lifestyle</a></li>
+                <li><a href="gallery.html">Cat Gallery</a></li>
+				<li><a href="lifestyle.html">Lifestyle</a></li>
+				<li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -98,36 +98,11 @@
 	     
     </main>
 	
-	<button onclick="getLocation()">Click button to allow your location </button>
-
-<p id="location"></p>
-
-<script>
-
-const x = document.getElementById("location");
-
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(success, error);
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
-
-function success(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
-}
-
-function error() {
-  alert("Sorry, no position available.");
-}
-</script>
 	
-
-
+	
     <footer>
-        <p>&copy; Bethany Gonzales 2025 </p>
+		
+       <p>&copy; Bethany Gonzales 2025 </p> 
     </footer>
 
 </body>
