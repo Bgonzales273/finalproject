@@ -21,12 +21,19 @@
         }
         
     </style>
+	
+<script>
+        function showMessage() {
+            alert("Just for show, haven't quite figured it out yet lol");
+        }
+    </script>
+
 	</head>
 	 <header>
         <h1>The Cat Corner</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="gallery.html">Cat Gallery</a></li>
 				<li><a href="lifestyle.html">Lifestyle</a></li>
@@ -36,8 +43,108 @@
     </header>
 
 <body>
+	
+	
+
+    <div class="section">
+       <h1> Welcome to the cutest gallery you have ever seen! </h1>
+	</div>
+	
+
+	<div class="responsive">
+  <div class="gallery">
+      <img src="images/milo.jpg" alt="Milo The Cat" >
+    
+    <div class="desc">Milo</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    
+      <img src="images/orangecat.jpg" alt="Cheddar" >
+    
+    <div class="desc">Cheddar</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    
+      <img src="images/loki.jpg" alt="Loki">
+   
+    <div class="desc">Loki</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="images/yang.jpg" alt="Yang">
+    <div class="desc">Yang</div>
+  </div>
+</div>
+	
+	<div class="responsive">
+  <div class="gallery">
+    
+      <img src="images/mars2.jpg" alt="Mars">
+   
+    <div class="desc"> Mars</div>
+  </div>
+</div>
+	
+	<div class="responsive">
+  <div class="gallery">
+    
+      <img src="images/raven2.jpg" alt="Raven">
+   
+    <div class="desc"> Raven</div>
+  </div>
+	</div>
+	
+	
+	<div class="responsive">
+  <div class="gallery">
+    
+      <img src="images/ziggy.jpg" alt="Ziggy">
+   
+    <div class="desc">Ziggy</div>
+  </div>
+	</div>
+		
+		
+		<div class="responsive">
+  <div class="gallery">
+    
+      <img src="images/sophia.jpg" alt="Sophia">
+   
+    <div class="desc"> Sophia</div>
+  </div>
+	</div>
+
+		
+	
+	<div class="clearfix"></div>
+	
+	
+	<div class="imgform">
+					   
+        <h2>Upload Your Cat!</h2>
+        <form onsubmit="showMessage(); return false;">
+            <label for="file">Choose Your Favorite Cat Pic To Upload!</label>
+            <input type="file" id="file" name="file" accept="image/*">
+            <button type="submit">Upload Image</button>
+        </form>
+    </div>
+	
+	
 </body>
+	
+	
 	<footer>
         <p>&copy; Bethany Gonzales 2025 </p>
     </footer>
 </html>
+
+

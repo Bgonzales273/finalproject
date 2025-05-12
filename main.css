@@ -1,13 +1,14 @@
 @charset "UTF-8";
 /* CSS Document */
 
-header {
+header,footer{
     font-family: "Red Hat Text", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 background-color:#A6B0FF;
             color: white;
             padding: 1rem 0;
+	text-align:center; 
         }
 
 .banner {
@@ -83,7 +84,7 @@ body{
 }
 
 div#left-sidebar, div#right-sidebar {
-    background-color: #f4f4f4;
+    background-color: hsla(313,74%,86%,1.00);
     padding: 20px;
     width: 20%;
     margin: 20px;
@@ -105,13 +106,7 @@ div#left-sidebar, div#right-sidebar {
         align-items: center;
 	}
 	
-	footer {
 	
-            background-color: #A6B0FF;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            
-        }
-	
+          
+       
 }
